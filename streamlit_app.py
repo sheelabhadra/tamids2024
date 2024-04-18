@@ -217,6 +217,7 @@ def data_exploration():
     st.image(image, use_column_width=True)
 
     st.write(" ")
+    st.write(" gasgsag ")
     JSONFile = open(f"HTML/Total_Ocean_GDP_percentage.json", 'r', encoding  = 'utf-8')
     Tot_ocean_GDP = JSONFILE.read()
     components.html(Tot_ocean_GDP, height = 200)
