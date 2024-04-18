@@ -217,7 +217,11 @@ def data_exploration():
     st.image(image, use_column_width=True)
 
     st.write(" ")
-
+    JSONFile = open(f"HTML/Total_Ocean_GDP_percentage.json", 'r', encoding  = 'utf-8')
+    Tot_ocean_GDP = JSONFILE.read()
+    components.html(Tot_ocean_GDP, height = 200)
+    col1, col2, col3 = st.columns((1,2.5,1))
+    st.write(" ")
 
 
 # ~~~~~~~~~~~~~~~~~~ Causal interference of the sea level rise ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
